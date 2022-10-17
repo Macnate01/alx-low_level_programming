@@ -2,8 +2,8 @@
 
 /**
 *
-* main-entry point for the program.
-* Return:0 if no errors, return non zero if errors
+* main - entry point
+* Return: Always 0 (successs)
 */
 
 int main(void)
