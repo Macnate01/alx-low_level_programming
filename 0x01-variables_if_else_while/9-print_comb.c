@@ -1,24 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main-program entry point.
- * Return:0 success, non zero error.
+ *
+ *  main - Entry point
+ *  Description: print 0, 1, - 9
+ *
+ *  Return: Always 0 (Success)
  */
 int main(void)
 {
-	int num;
-	for (num = '0'; num <= '9'; num++)
+
+	int digit = 0;
+	while (digit <= 9)
 	{
-		putchar(num);
-		if (num == '9')
-	{
-		break;
-	}
-		else
-	{
-		putchar(',');
-		putchar(' ');
-	}
+		putchar(digit + 48);
+		if (digit != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		++digit;
 	}
 	putchar('\n');
 	return (0);
