@@ -1,18 +1,35 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print num except 2 and 4
+ * print_triangle -  a function that prints a triangle, followed by a new line.
  *
- * Return: viod
+ * @size: An input integer
+ *
+ * Return: Always 0
  */
-void print_most_numbers(void)
-{
-	char c;
 
-	for (c = '0'; c <= '9'; c++)
+void print_triangle(int size)
+{
+	int i = 0, j, n = size - 1;
+
+	if (size > 0)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		{
+			for (; i < size; i++)
+			{
+			for (j = 0; j < size; j++)
+			}
+
+			{
+				if (j < n)
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			n--;
+			_putchar('\n');
+		}
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
